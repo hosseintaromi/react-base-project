@@ -1,0 +1,178 @@
+
+.App {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.footer-content {
+  text-align: center;
+  background-color: rgb(155, 204, 239);
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar-content {
+  text-align: left;
+  background-color: aquamarine;
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar-item {
+  display: inline;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  font-weight: bolder;
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dialog-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn-container {
+  align-items: end;
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+
+.btn-container-2 {
+  align-items: end;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  color: rgb(255, 71, 83);
+}
+
+.dialog-content {
+  margin-top: 20px;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: bisque;
+  border: 3px dashed rgb(255, 71, 83);
+  padding: 10px;
+  text-align: justify;
+}
+
+.img {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: auto;
+}
+.btn-neg {
+  background-color: rgb(255, 90, 90);
+  color: white;
+  font-size: large;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.btn-pos {
+  background-color: rgb(79, 216, 141);
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  font-weight: bolder;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.d-none {
+  display: none;
+  cursor: pointer;
+}
+
+.toast-- {
+  text-align: center;
+  margin-top: 15px;
+  width: 400px;
+  height: 200px;
+  padding-top: 50px;
+  background-color: #61dafb;
+  color: rgb(139, 15, 15);
+}
+
+.alert-- {
+  text-align: center;
+  margin-top: 15px;
+  width: 400px;
+  height: 200px;
+  padding-top: 50px;
+  background-color: #7d0882;
+  color: rgb(153, 185, 229);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+  background: #7d0882;
+}

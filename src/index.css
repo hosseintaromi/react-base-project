@@ -1,0 +1,227 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.alert-card {
+  align-items: center;
+  font-size: 18px;
+  width: 350px;
+  padding: 15px;
+  /* height: 350px; */
+  text-align: center;
+  border: 2px solid #61226f;
+  background-color: rgb(244, 96, 160);
+  color: #61226f;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.alert-card-2 {
+  align-items: center;
+  font-size: 18px;
+  width: 350px;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #61226f;
+  background-color: rgb(144, 163, 198);
+  color: #61226f;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  color: #f2ff04;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #61226f;
+  color: #fff;
+  z-index: 2;
+  font-size: 18px;
+}
+
+.active-tab {
+  font-weight: bold;
+  color: aqua;
+  font-size: 21px;
+}
+
+.img- {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-- {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.tab-2 {
+  height: 100vh;
+  background-color: rgb(102, 68, 60) !important;
+}
+
+.tab-3 {
+  height: 100vh;
+  background-color: rgb(21, 4, 22);
+}
+
+.partial-tab-container {
+  z-index: 1;
+
+  .page-wrapper {
+    background-color: #8613cf;
+    width: 100%;
+    border: 5px dashed #f2ff04;
+  }
+}
+
+.modal-container {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+
+  .modal-backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.bottom-sheet-container {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+
+  .sheet-backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.toasts-container {
+  z-index: 6;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  right: 8px;
+
+  .page-wrapper {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.toast-message {
+  margin-top: 12px;
+  background-color: coral;
+  width: 100%;
+  border-radius: 6px;
+  color: #61226f;
+  font-size: large;
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+/* tabs */
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.tab-wrapper,
+.tab-container {
+  position: absolute;
+  overflow: hidden;
+  inset: 0;
+  z-index: 0;
+}
+.tab-container {
+  z-index: 1;
+}
+.tab-wrapper .page-wrapper,
+.tab-container .page-wrapper {
+  position: absolute;
+  overflow: hidden;
+}
+.tab-wrapper .page-wrapper,
+.tab-container .page-wrapper {
+  inset: 0;
+}
+@media (min-width: 768px) {
+  .tab-wrapper,
+  .tab-container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.modal-container .page-wrapper.passportHelp {
+  padding: 0;
+}
+.modal-container .page-wrapper,
+.bottom-sheet-container .page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-container .page-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px,
+    rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+  padding: 16px 32px 24px;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.bottom-sheet-container .page-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 22px 22px 0 0;
+  padding: 28px 16px;
+  width: 100vw;
+  display: block;
+  outline: 0;
+  max-height: 80vh;
+  overflow: auto;
+  background: #fff;
+  color: #000;
+  max-width: 700px;
+}
+.bottom-sheet-container .page-wrapper::before {
+  content: "";
+  width: 20%;
+  height: 3px;
+  background-color: #ddd;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}

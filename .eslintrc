@@ -1,0 +1,50 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-typescript",
+        "react-app",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "react/jsx-key": 2,
+        "arrow-body-style": 1,
+        "import/no-duplicates": 1,
+        "react/self-closing-comp": 1,
+        "@typescript-eslint/no-shadow": 0,
+        "import/no-useless-path-segments": 1,
+        "@typescript-eslint/naming-convention": 0,
+        "prettier/prettier": [
+            "warn"
+        ],
+        "react/react-in-jsx-scope": [
+            "off"
+        ],
+        "react/jsx-uses-react": [
+            "off"
+        ],
+        "react/jsx-props-no-spreading": [
+            "off"
+        ],
+        "react/no-unescaped-entities": [
+            "off"
+        ],
+        "import/no-extraneous-dependencies": [
+            "off"
+        ],
+        "@typescript-eslint/no-empty-function": [
+            "off"
+        ]
+    }
+}
